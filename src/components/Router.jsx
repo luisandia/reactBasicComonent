@@ -7,7 +7,9 @@ import {
     withRouter   //switch ruta
 } from 'react-router-dom'
 
-
+//nfn crear const
+//rfe
+//rcc
 const StaticSite = () => (
     <Router>
         <div>
@@ -58,7 +60,8 @@ const Servicios = () => (
 
 const Contacto = ({ match }) => (
     <div>
-        <h1>Info del curso</h1>
+        <h1>Info del Contacto</h1>
+        <Route path={`${match.url}/:contactoInfo`} component={InfoContacto} />
         <Route exact path={match.url} render={() => (
             <div>
                 <h1>Mantente en contacto</h1>
@@ -88,6 +91,10 @@ const Contacto = ({ match }) => (
         )} />
 
     </div>
+)
+
+const InfoContacto = ({ match }) => (
+    <div><h4>{match.params.contactoInfo}</h4></div>
 )
 
 export default StaticSite;
