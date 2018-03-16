@@ -41,7 +41,6 @@ class App extends Component {
     document.getElementById('toggle').classList.toggle('x');
   }
 
-
   render() {
 
     return this.state.loading === true ?
@@ -67,28 +66,26 @@ class App extends Component {
                     <Link className="pure-menu-link" to="/acerca" Onclick={this.handleOnClick}>Acerca</Link>
                   </li>
                   <li className="pure-menu-item">
-                  <Link className="pure-menu-link" to="/registro" Onclick={this.handleOnClick}>Registro</Link>
+                    <Link className="pure-menu-link" to="/registro" Onclick={this.handleOnClick}>Registro</Link>
                   </li>
                   <li className="pure-menu-item">
-                  <Link className="pure-menu-link" to="/login" Onclick={this.handleOnClick}>Login</Link>
+                    <Link className="pure-menu-link" to="/login" Onclick={this.handleOnClick}>Login</Link>
                   </li>
                 </ul>
               </div>
             </header>
             <main className="Main">
               <Switch>
-                <Route path="/" exact component={Home}/>
-                <Route path="/acerca" exact component={About}/>
-                <Route path="/login" exact component={Login}/>
-                <Route path="/registro" exact component={Register}/>
-                <Route component={Error404}/>
+                <Route path="/" exact component={Home} />
+                <Route path="/acerca" exact component={About} />
+                <Route path="/login" exact component={Login} />
+                <Route path="/registro" exact component={Register} />
+                <Route component={Error404} />
               </Switch>
             </main>
           </div>
         </Router>
       )
-
-
   }
 }
 /*
@@ -104,4 +101,3 @@ App.defaultProps = {
 
 }*/
 export default App;
-
