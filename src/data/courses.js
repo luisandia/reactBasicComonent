@@ -1,9 +1,4 @@
-export const courses= [{
-      id: 1,
-      name: 'react desde 0',
-      teacher: 'luis andia'
-    }, {
-      id: 2,
-      name: 'jquery',
-      teacher: 'juan'
-    }]
+export const courses = [
+  { id: 1, name: 'React desde cero', teacher:'Jonathan MirCha' },
+  { id: 2, name: 'Drupal 8 desde cero', teacher:'Alberto Quiroga' }
+]

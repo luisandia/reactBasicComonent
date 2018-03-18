@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Courses from '../../courses/'
 
 export default class DashboardCourses extends Component {
-  render() {
-    return (
-      <div>
-        <h1>seccion DashboardCourses</h1>
-      </div>
-    )
-  }
-};
+	render() {
+		return (
+			<article className="Main-container">
+				<Courses />
+			</article>
+		)
+	}
+}
